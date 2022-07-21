@@ -1,0 +1,24 @@
+{
+  "name": "hass-in",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
+    "home-assistant-js-websocket": "^7.1.0",
+    "moment": "^2.29.4",
+    "ms": "^2.1.3",
+    "nanoid": "^4.0.0",
+    "prettier": "^2.7.1",
+    "ws": "^8.8.0"
+  }
+}

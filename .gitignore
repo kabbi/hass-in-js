@@ -1,0 +1,8 @@
+.DS_Store
+.cache
+node_modules
+.env
+.eslintcache
+.idea
+scripts/*
+!scripts/README.md
