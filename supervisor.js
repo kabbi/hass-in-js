@@ -8,6 +8,11 @@ const debug = createDebug('supervisor');
 
 configureEnv();
 
+// Hack to exit with Ctrl+C when run inside docker container
+process.on('SIGINT', function () {
+  process.exit();
+});
+
 await setupHassConnection();
 await setupFileWatcher();
 debug('startup done');

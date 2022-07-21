@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  hci2mqtt:
+    image: kabbi/hass-in-js
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./scripts:/usr/src/app/scripts
+    environment:
+      - HASS_URL=http://localhost:8123
+      - HASS_TOKEN=token
+      - DEBUG=*
